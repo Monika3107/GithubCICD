@@ -1,7 +1,5 @@
 name: Build Github Demo
-on: [pull_request]
-    branches:
-      - main
+on: [push]
 
 jobs:
   build:

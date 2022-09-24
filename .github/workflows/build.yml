@@ -1,7 +1,5 @@
 name: Build Github Demo
-on:
-  push:
-    branches: [ $default-branch ]
+on: push
 
 jobs:
   build:
@@ -16,5 +14,5 @@ jobs:
           distribution: 'adopt'
           cache: maven
       - name: Build with Maven
-        working-directory: ./GitHubDemo
+        working-directory: GitHubDemo
         run:  mvn -B clean install --file pom.xml

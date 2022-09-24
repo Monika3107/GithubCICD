@@ -15,7 +15,6 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Build with Maven
-          run: |
-            cd GitHubDemo
-            mvn -B clean install --file pom.xml
+          working-directory: ./GitHubDemo
+          run:  mvn -B clean install --file pom.xml
       

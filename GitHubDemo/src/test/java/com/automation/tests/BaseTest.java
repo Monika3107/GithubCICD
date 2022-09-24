@@ -34,8 +34,4 @@ public class BaseTest {
         Browser.quit();
     }
 
-    @AfterSuite(alwaysRun = true)
-    public void publishReports(){
-        Browser.quit();
-    }
 }
